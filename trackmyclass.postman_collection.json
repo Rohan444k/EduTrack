@@ -1,0 +1,509 @@
+{
+	"info": {
+		"_postman_id": "80315864-345d-4526-993c-42b782dc31f1",
+		"name": "trackmyclass",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4468909"
+	},
+	"item": [
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "add student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"name\":\"student 5\",\r\n \"email\":\"stu5@gmail.com\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8091/student/add-student",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"student",
+								"add-student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all student",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8091/student/get-all-students",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"student",
+								"get-all-students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get student by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8091/student/get-student-by-id/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"student",
+								"get-student-by-id",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete student",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8091/student/delete-student/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"student",
+								"delete-student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update student",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"name\": \"student 2\",\r\n    \"email\": \"student2@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8091/student/update-student",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"student",
+								"update-student"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subject",
+			"item": [
+				{
+					"name": "get all subjects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8091/subject/get-all-subjects",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"subject",
+								"get-all-subjects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get subject by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8091/subject/get-subject-by-id/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"subject",
+								"get-subject-by-id",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete subject",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8091/subject/delete-subject/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"subject",
+								"delete-subject",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update subject",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 3,\r\n        \"name\": \"History\"\r\n        \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8091/subject/update-subject",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"subject",
+								"update-subject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add subject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Java\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8091/subject/add-subject",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"subject",
+								"add-subject"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "add user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"sham\",\r\n  \"password\": \"sham123\",\r\n  \"email\": \"sham@gmail.com\",\r\n  \"role\": \"faculty\",\r\n  \"firstName\": \"Sham\",\r\n  \"lastName\": \"Chadar\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8091/user/register-user",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"user",
+								"register-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8091/user/get-all-user",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"user",
+								"get-all-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user by username",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8091/user/get-user-by-username/ram",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"user",
+								"get-user-by-username",
+								"ram"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8091/user/delete-user/exampleUsername",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"user",
+								"delete-user",
+								"exampleUsername"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"ram\",\r\n\r\n  \"password\": \"ram1234\",\r\n  \"email\": \"ram@gmail.com\",\r\n  \"role\": \"admin\",\r\n  \"firstName\": \"RAM\",\r\n  \"lastName\": \"CHADAR\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8091/user/update-user",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"user",
+								"update-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"ram\",\r\n    \"password\":\"ram1235\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8091/user/login-user",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"user",
+								"login-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all admin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8091/user/get-all-admin",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"user",
+								"get-all-admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all faculty",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8091/user/get-all-faculty",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"user",
+								"get-all-faculty"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Attendance",
+			"item": [
+				{
+					"name": "take attendance",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"sham\",\r\n    \"subjectId\": 1,\r\n    \"date\": \"2025-01-20\",\r\n    \"time\": \"03:30:00 PM\",\r\n    \"studentIds\": [\r\n        1,\r\n        2,\r\n        4\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8091/attendance/take-attendance",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"attendance",
+								"take-attendance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all attendance records",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8091/attendance/get-all-attendance-records",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"attendance",
+								"get-all-attendance-records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by subject date",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8091/attendance/get-attendance-by-date-subjet/2024-12-04/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"attendance",
+								"get-attendance-by-date-subjet",
+								"2024-12-04",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
